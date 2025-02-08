@@ -85,3 +85,6 @@ function guessedAnswer() {
     // restartElement = location.reload();
   }
 }
+function pagechange() {
+  window.location.href = "game.html";
+}

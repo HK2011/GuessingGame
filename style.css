@@ -117,6 +117,13 @@ guessing_value {
   width: 15vw;
 }
 
+.reset {
+  width: 10vw;
+}
+.to_home {
+  width: 10vw;
+}
+
 @media only screen and (max-width: 768px) {
   .bottom_section_1st_half input {
     height: 7vh;
@@ -161,9 +168,17 @@ guessing_value {
     position: static;
     margin-bottom: 0px;
   }
+  .to_home {
+    height: 5vh;
+    width: 50vw;
+    background-color: silver;
+    position: absolute;
+    bottom: 0;
+    right: 0.1%;
+  }
   .reset_sub {
     height: 5vh;
-    width: 100vw;
+    width: 50vw;
     background-color: silver;
     display: block;
   }
