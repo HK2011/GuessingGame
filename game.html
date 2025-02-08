@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0  minimal-ui"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Guessing Game</title>
+  </head>
+
+  <body>
+    <section class="main">
+      <div class="full_section">
+        <div class="top_section">
+          <h1>Guessing Game</h1>
+          <button onclick="restart()" class="reset">Start/Restart</button>
+
+          <audio
+            id="trumpetStartSound"
+            src="TunePocket-Trumpet-Fanfares-1-Preview.mp3"
+          ></audio>
+
+          <h2 class="guess">?</h2>
+        </div>
+        <div class="bottom_section">
+          <div class="bottom_section_1st_half">
+            <input
+              type="number"
+              id="guessing_value"
+              placeholder="ENTER YOUR ANSWER"
+            />
+            <button onclick="guessedAnswer()" class="submit">Submit</button>
+            <audio id="fail_sound" src="trumpet-fail-242645.mp3"></audio>
+            <audio id="yay_sound" src="preview.mp3"></audio>
+          </div>
+          <div class="bottom_section_2nd_half">
+            <h1 id="result">Result</h1>
+            <h1>Score:<span class="score">100</span></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button onclick="restart()" class="reset_sub">Start/Restart</button>
+    <script src="script.js"></script>
+  </body>
+</html>
